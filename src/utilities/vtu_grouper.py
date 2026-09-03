@@ -11,33 +11,35 @@ import numpy as np
 import re, json
 
 
-#root = "C:/Users/angus/OneDrive - Universidad Católica de Chile/Documentos/ards-lung-simulator/%s/"
-#case = "PIG5-medium-calibrated-2"
-#root = ""
-#root = root%case
-
 pig_num = 5
 
-root = "C:/Users/angus/OneDrive - Universidad Católica de Chile/Documentos/codes/DeleteMe/MFSIMS/PIG%i-ma/output/"%pig_num
-root = "C:/Users/angus/OneDrive - Universidad Católica de Chile/Documentos/ards-lung-simulator/PIG5-medium-gravity-12/"
-path = "%s/VTK/"%root
+repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
+root = os.path.join(repo_root, "outputs", "PIG5-mc-per")
+path = os.path.join(root, "VTK")
 filelist = os.listdir(path)
 
-dest = "%s/post/"%root
-if not os.path.isdir(dest):
-    os.mkdir(dest)
+dest = os.path.join(root, "post")
+os.makedirs(dest, exist_ok=True)
 
 use_initial_porosity = True
 alpha_correction = True
 
 
-initial_porosity_path = "C:/Users/angus/Downloads/CORNELL-NEWGEO/PIG%i/ARDSnet/medium/FEniCS/Porosity_Visualization.vtu"%pig_num
-phi0_mesh = io.read(initial_porosity_path)
-phi0_celldata = phi0_mesh.cell_data['Porosity_EE'][0]
-phi0_pointdata = phi0_mesh.point_data['Porosity_EE']
+initial_porosity_path = os.path.join(
+    repo_root, "Geometries", "PIG%i" % pig_num, "ARDSnet", "medium",
+    "FEniCS", "Porosity_Visualization.vtu"
+)
+if use_initial_porosity and os.path.isfile(initial_porosity_path):
+    phi0_mesh = io.read(initial_porosity_path)
+    phi0_celldata = phi0_mesh.cell_data['Porosity_EE'][0]
+    phi0_pointdata = phi0_mesh.point_data['Porosity_EE']
+else:
+    use_initial_porosity = False
+    phi0_pointdata = None
 
 
-vtu_files = list(filter(lambda x: x.split(".")[2]=="vtu",filelist))
+vtu_files = [filename for filename in filelist
+             if filename.lower().endswith(".vtu")]
 
 heads = ["Displacement","HYD","HYD_tissue",
          "Jacobian","Pressure","VM","VM_tissue", "QQint"]
@@ -63,6 +65,8 @@ files = {"Displacement":list(sorted(filter(lambda x: x[0]=="D", vtu_files))),
          "time":dummy,
          }
 
+heads = [field for field in heads if files[field]]
+
 
 alpha_data = {2:1.0347,
                  3:1.0325,
@@ -72,10 +76,13 @@ alpha_data = {2:1.0347,
                  6:1.0376}
 
 if alpha_correction:
-    alpha = alpha_data[pig_num]
-    print("Note that we are employing alpha-correction for the Jacobian")
-    print("*** Current value for subject 'PIG%i' is %.4f ***"%(pig_num,alpha))
-    print("*** MAKE SURE IT IS THE RIGHT VALUE ***")
+    alpha = alpha_data.get(pig_num, 1.0)
+    if pig_num in alpha_data:
+        print("Note that we are employing alpha-correction for the Jacobian")
+        print("*** Current value for subject 'PIG%i' is %.4f ***"%(pig_num,alpha))
+        print("*** MAKE SURE IT IS THE RIGHT VALUE ***")
+    else:
+        print("No alpha-correction value is available; using alpha=1.0")
 
 
 ##end_tag = "3.250000000000"
@@ -108,13 +115,13 @@ for i in range(len(dummy)):
             jac = msh.point_data["Jacobian"]
             jac_full = jac.copy()
             jac_partial = jac.copy()/alpha**3
+            data = jac_partial - 1 + 0.5
             
-            if use_initial_porosity and jac.shape != phi0_pointdata.shape:
+            if use_initial_porosity and phi0_pointdata is not None and jac.shape != phi0_pointdata.shape:
                 use_initial_porosity = False
-                data = jac_partial-1+ 0.5 # Assuming initial porosity 0.5
                 print("Warning: Shape mismatch while reading the initial porosity")
             
-            if use_initial_porosity and jac.shape == phi0_pointdata.shape:
+            if use_initial_porosity and phi0_pointdata is not None and jac.shape == phi0_pointdata.shape:
                 print("Using the initial porosity from provided field.")
                 data = jac_partial-1+phi0_pointdata
             
@@ -168,7 +175,7 @@ for field in heads:
 
 # create json for time series
 
-reout = list(map(lambda x: x.split("/")[-1],outlist))
+reout = [os.path.basename(filename) for filename in outlist]
 
 series_data = {
     "file-series-version": "1.0",
