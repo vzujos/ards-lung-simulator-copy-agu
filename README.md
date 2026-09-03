@@ -29,3 +29,16 @@ Used libraries:
 - `matplotlib`
 - `os`
 - `sys`
+
+## Cambios al repositorio original
+
+Se descartaron las siguientes carpetas y archivos (por recomendación de Agustín):
+
+- `src/legacy/`
+- `src/signal-processing/`
+- `src/test/`
+- `functions2.py`
+
+Se realizaron los siguientes cambios al archivo `src/execution/2025-12_universal-executer.py`:
+
+- Se cambiaron unas ruas absolutas de las geometrías a rutas relativas (lines 8, 404-410, 504)
