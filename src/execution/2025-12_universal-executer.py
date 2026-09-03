@@ -5,6 +5,7 @@ Created on Fri Mar 22 14:47:49 2024
 @author: angus
 """
 import sys
+import os
 sys.path.append("..")
 import vcv_lung
 import supportfunctions as sf
@@ -400,12 +401,13 @@ if __name__ == "__main__":
     case ="FEniCS" # This is the specific name for the mesh in use
     
     # Declare the path to the folder
-    #path_to_mesh = "/mnt/c/Users/angus/Downloads/AIRWAYS-SENSIBILIZATION/%s/%s"%(packname,mesh_packs[packname])
-    path_to_mesh = "/mnt/c/Users/angus/Downloads/CORNELL-NEWGEO/PIG%i/ARDSnet/%s/"%(pig,mesh_type)
+    repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
+    path_to_mesh = os.path.join(repo_root, "Geometries", "PIG%i" % pig, "ARDSnet", mesh_type, "")
     path_to_airway = path_to_mesh+"skel.vtu"
   
     # Direct the output of this execution towards this folder
-    output_to = "/mnt/c/Users/angus/OneDrive - Universidad Católica de Chile/Documentos/ards-lung-simulator/"
+    output_to = os.path.join(repo_root, "outputs", "")
+    os.makedirs(output_to, exist_ok=True)
     
     # Checkpoint parameters
     restart_from_last_checkpoint = False
@@ -499,7 +501,7 @@ if __name__ == "__main__":
                                                "nitmax":100}}
 
     # Path to experimental data, load matlab file and prepare data
-    signal_path = '/mnt/c/Users/angus/Downloads/CORNELL-NEWGEO/PIG%i/PIG%i-ARDSnet.npz'%(pig,pig)
+    signal_path = os.path.join(repo_root, "Geometries", "PIG%i" % pig, "ARDSnet", "PIG%i-ARDSnet.npz" % pig)
 
     # Load the experimental signal
     npz = np.load(signal_path)
