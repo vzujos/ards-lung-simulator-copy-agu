@@ -1,0 +1,1214 @@
+{
+  "communities": {
+    "0": [
+      "src_calibrate_shapecalibration",
+      "src_calibrate_shapecalibration_compute_iou",
+      "src_calibrate_shapecalibration_determine_bbox",
+      "src_calibrate_shapecalibration_determine_geometric_center",
+      "src_calibrate_shapecalibration_determine_shape_misfit",
+      "src_calibrate_shapecalibration_execute_single_simulation",
+      "src_calibrate_shapecalibration_execute_vcv_calibration",
+      "src_calibrate_shapecalibration_extend",
+      "src_calibrate_shapecalibration_generate_registration_ply",
+      "src_calibrate_shapecalibration_generate_simulation_ply",
+      "src_calibrate_shapecalibration_generate_uniform_points",
+      "src_calibrate_shapecalibration_generate_vcv_dictionary",
+      "src_calibrate_shapecalibration_geometric_center",
+      "src_calibrate_shapecalibration_hybrid_voting_raycast",
+      "src_calibrate_shapecalibration_initialize_calibration",
+      "src_calibrate_shapecalibration_inner_contraction",
+      "src_calibrate_shapecalibration_interpolatebsplines",
+      "src_calibrate_shapecalibration_iterate",
+      "src_calibrate_shapecalibration_manage_paths",
+      "src_calibrate_shapecalibration_neldermead_iterations",
+      "src_calibrate_shapecalibration_outer_contraction",
+      "src_calibrate_shapecalibration_preprocess_shape_calibration",
+      "src_calibrate_shapecalibration_process",
+      "src_calibrate_shapecalibration_rationale_1020",
+      "src_calibrate_shapecalibration_rationale_207",
+      "src_calibrate_shapecalibration_rationale_227",
+      "src_calibrate_shapecalibration_rationale_292",
+      "src_calibrate_shapecalibration_rationale_335",
+      "src_calibrate_shapecalibration_rationale_463",
+      "src_calibrate_shapecalibration_rationale_471",
+      "src_calibrate_shapecalibration_rationale_485",
+      "src_calibrate_shapecalibration_rationale_541",
+      "src_calibrate_shapecalibration_rationale_697",
+      "src_calibrate_shapecalibration_rationale_870",
+      "src_calibrate_shapecalibration_reflect",
+      "src_calibrate_shapecalibration_shrink",
+      "src_calibrate_shapecalibration_step",
+      "src_calibrate_shapecalibration_tetrahedron_volume",
+      "src_calibrate_shapecalibration_text_manager",
+      "src_execution_2025_06_20_execute_shape_calibration",
+      "src_execution_2025_06_20_execute_shape_calibration_create_flow_function",
+      "src_execution_2025_06_20_execute_shape_calibration_create_pressure_function",
+      "src_execution_2025_06_20_execute_shape_calibration_rationale_66"
+    ],
+    "1": [
+      "src_calibrate_newcalibrationlib",
+      "src_calibrate_newcalibrationlib_compute_misfit",
+      "src_calibrate_newcalibrationlib_determine_static_respiratory_mechanics",
+      "src_calibrate_newcalibrationlib_equation_of_motion_regression",
+      "src_calibrate_newcalibrationlib_execute_dual_simulations",
+      "src_calibrate_newcalibrationlib_execute_parallel_simulations",
+      "src_calibrate_newcalibrationlib_execute_single_simulation",
+      "src_calibrate_newcalibrationlib_execute_vcv_calibration",
+      "src_calibrate_newcalibrationlib_extend",
+      "src_calibrate_newcalibrationlib_generate_vcv_dictionary",
+      "src_calibrate_newcalibrationlib_initialize_calibration",
+      "src_calibrate_newcalibrationlib_inner_contraction",
+      "src_calibrate_newcalibrationlib_iterate",
+      "src_calibrate_newcalibrationlib_manage_paths",
+      "src_calibrate_newcalibrationlib_neldermead_iterations",
+      "src_calibrate_newcalibrationlib_outer_contraction",
+      "src_calibrate_newcalibrationlib_process",
+      "src_calibrate_newcalibrationlib_process_simulation_stiffness",
+      "src_calibrate_newcalibrationlib_rationale_155",
+      "src_calibrate_newcalibrationlib_rationale_280",
+      "src_calibrate_newcalibrationlib_rationale_308",
+      "src_calibrate_newcalibrationlib_rationale_514",
+      "src_calibrate_newcalibrationlib_rationale_568",
+      "src_calibrate_newcalibrationlib_rationale_582",
+      "src_calibrate_newcalibrationlib_rationale_750",
+      "src_calibrate_newcalibrationlib_rationale_902",
+      "src_calibrate_newcalibrationlib_reflect",
+      "src_calibrate_newcalibrationlib_shrink",
+      "src_calibrate_newcalibrationlib_step",
+      "src_calibrate_newcalibrationlib_text_manager",
+      "src_vcv_lung_determineaveragepressures",
+      "src_vcv_lung_determinetreeinletconditions",
+      "src_vcv_lung_execute_vcv_simulation",
+      "src_vcv_lung_rationale_22",
+      "src_vcv_lung_rationale_46"
+    ],
+    "2": [
+      "src_calibrate_calibrationlib3d",
+      "src_calibrate_calibrationlib3d_compute_misfit",
+      "src_calibrate_calibrationlib3d_determine_misfits_from_signal",
+      "src_calibrate_calibrationlib3d_determine_respiratory_mechanics",
+      "src_calibrate_calibrationlib3d_execute_dual_simulations",
+      "src_calibrate_calibrationlib3d_execute_parallel_simulations",
+      "src_calibrate_calibrationlib3d_execute_single_simulation",
+      "src_calibrate_calibrationlib3d_execute_vcv_calibration",
+      "src_calibrate_calibrationlib3d_extend",
+      "src_calibrate_calibrationlib3d_generate_vcv_dictionary",
+      "src_calibrate_calibrationlib3d_initialize_calibration",
+      "src_calibrate_calibrationlib3d_inner_contraction",
+      "src_calibrate_calibrationlib3d_iterate",
+      "src_calibrate_calibrationlib3d_manage_paths",
+      "src_calibrate_calibrationlib3d_neldermead_iterations",
+      "src_calibrate_calibrationlib3d_outer_contraction",
+      "src_calibrate_calibrationlib3d_process",
+      "src_calibrate_calibrationlib3d_process_simulation_stiffness",
+      "src_calibrate_calibrationlib3d_rationale_1041",
+      "src_calibrate_calibrationlib3d_rationale_218",
+      "src_calibrate_calibrationlib3d_rationale_499",
+      "src_calibrate_calibrationlib3d_rationale_603",
+      "src_calibrate_calibrationlib3d_rationale_632",
+      "src_calibrate_calibrationlib3d_rationale_646",
+      "src_calibrate_calibrationlib3d_rationale_894",
+      "src_calibrate_calibrationlib3d_reflect",
+      "src_calibrate_calibrationlib3d_shrink",
+      "src_calibrate_calibrationlib3d_step",
+      "src_calibrate_calibrationlib3d_text_manager"
+    ],
+    "3": [
+      "src_modelfunctions",
+      "src_modelfunctions_equation_of_motion_regression",
+      "src_modelfunctions_f",
+      "src_modelfunctions_f2aux_mass",
+      "src_modelfunctions_finv",
+      "src_modelfunctions_finv_t",
+      "src_modelfunctions_give_times_pressures_deltas",
+      "src_modelfunctions_jj",
+      "src_modelfunctions_lnjj",
+      "src_modelfunctions_phi",
+      "src_modelfunctions_rationale_295",
+      "src_modelfunctions_rationale_399",
+      "src_modelfunctions_stress_bir2019",
+      "src_modelfunctions_stress_bir2019_inv",
+      "src_modelfunctions_stress_ma",
+      "src_modelfunctions_stress_ma_inv",
+      "src_modelfunctions_stress_perez",
+      "src_modelfunctions_stress_perez_inv",
+      "src_modelfunctions_times_and_fluxes",
+      "src_modelfunctions_times_and_pressures",
+      "src_modelfunctions_times_with_checkpoints",
+      "src_modelfunctions_vc_include_peep",
+      "src_modelfunctions_vc_supersyringe_times_and_fluxes",
+      "src_modelfunctions_write_signals",
+      "src_modelfunctions_write_vtk"
+    ],
+    "4": [
+      "src_utilities_2025_05_14_biomechanalysis_management",
+      "src_utilities_2025_05_14_biomechanalysis_management_compute_normal",
+      "src_utilities_2025_05_14_biomechanalysis_management_computenodaldefgradtensor",
+      "src_utilities_2025_05_14_biomechanalysis_management_correct_porosity",
+      "src_utilities_2025_05_14_biomechanalysis_management_count_surface_points_per_cell",
+      "src_utilities_2025_05_14_biomechanalysis_management_determine_geometric_center",
+      "src_utilities_2025_05_14_biomechanalysis_management_determine_shape_function",
+      "src_utilities_2025_05_14_biomechanalysis_management_femanalysissparse",
+      "src_utilities_2025_05_14_biomechanalysis_management_find_surface_points",
+      "src_utilities_2025_05_14_biomechanalysis_management_geometric_center",
+      "src_utilities_2025_05_14_biomechanalysis_management_interpolatebsplines",
+      "src_utilities_2025_05_14_biomechanalysis_management_interpolateintensities",
+      "src_utilities_2025_05_14_biomechanalysis_management_isovolumetricsegmentation",
+      "src_utilities_2025_05_14_biomechanalysis_management_rationale_205",
+      "src_utilities_2025_05_14_biomechanalysis_management_rationale_21",
+      "src_utilities_2025_05_14_biomechanalysis_management_rationale_230",
+      "src_utilities_2025_05_14_biomechanalysis_management_rationale_278",
+      "src_utilities_2025_05_14_biomechanalysis_management_rationale_298",
+      "src_utilities_2025_05_14_biomechanalysis_management_rationale_391",
+      "src_utilities_2025_05_14_biomechanalysis_management_rationale_507",
+      "src_utilities_2025_05_14_biomechanalysis_management_rationale_705",
+      "src_utilities_2025_05_14_biomechanalysis_management_rationale_803",
+      "src_utilities_2025_05_14_biomechanalysis_management_reorient_if_needed",
+      "src_utilities_2025_05_14_biomechanalysis_management_tet4defgradsmoothingoptisparse",
+      "src_utilities_2025_05_14_biomechanalysis_management_tetrahedron_volume"
+    ],
+    "5": [
+      "src_utilities_prepare_bma",
+      "src_utilities_prepare_bma_compute_normal",
+      "src_utilities_prepare_bma_computenodaldefgradtensor",
+      "src_utilities_prepare_bma_correct_porosity",
+      "src_utilities_prepare_bma_count_surface_points_per_cell",
+      "src_utilities_prepare_bma_determine_geometric_center",
+      "src_utilities_prepare_bma_determine_shape_function",
+      "src_utilities_prepare_bma_femanalysissparse",
+      "src_utilities_prepare_bma_find_surface_points",
+      "src_utilities_prepare_bma_geometric_center",
+      "src_utilities_prepare_bma_interpolatebsplines",
+      "src_utilities_prepare_bma_interpolateintensities",
+      "src_utilities_prepare_bma_isovolumetricsegmentation",
+      "src_utilities_prepare_bma_rationale_205",
+      "src_utilities_prepare_bma_rationale_21",
+      "src_utilities_prepare_bma_rationale_230",
+      "src_utilities_prepare_bma_rationale_278",
+      "src_utilities_prepare_bma_rationale_298",
+      "src_utilities_prepare_bma_rationale_391",
+      "src_utilities_prepare_bma_rationale_507",
+      "src_utilities_prepare_bma_rationale_705",
+      "src_utilities_prepare_bma_rationale_803",
+      "src_utilities_prepare_bma_reorient_if_needed",
+      "src_utilities_prepare_bma_tet4defgradsmoothingoptisparse",
+      "src_utilities_prepare_bma_tetrahedron_volume"
+    ],
+    "6": [
+      "src_execution_gravity_execution_preprocess_bma_for_analysis",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_compute_normal",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_computenodaldefgradtensor",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_correct_porosity",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_count_surface_points_per_cell",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_determine_geometric_center",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_determine_shape_function",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_femanalysissparse",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_find_surface_points",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_geometric_center",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_interpolatebsplines",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_interpolateintensities",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_rationale_20",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_rationale_248",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_rationale_367",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_rationale_565",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_rationale_663",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_rationale_751",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_rationale_771",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_rationale_842",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_rationale_867",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_reorient_if_needed",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_tet4defgradsmoothingoptisparse",
+      "src_execution_gravity_execution_preprocess_bma_for_analysis_tetrahedron_volume"
+    ],
+    "7": [
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_compute_normal",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_correct_porosity",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_count_surface_points_per_cell",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_determine_geometric_center",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_determine_shape_function",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_find_surface_points",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_geometric_center",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_interpolatebsplines",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_interpolateintensities",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_rationale_140",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_rationale_24",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_rationale_368",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_rationale_487",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_rationale_685",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_rationale_783",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_rationale_871",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_rationale_891",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_rationale_93",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_retrieve_global_histogram",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_retrieve_regional_histogram",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_tet4defgradsmoothingoptisparse",
+      "src_analysis_2025_05_13_aeration_histograms_from_meshes_tetrahedron_volume"
+    ],
+    "8": [
+      "src_calibrate_bocalibration",
+      "src_calibrate_bocalibration_bayesian_optimization",
+      "src_calibrate_bocalibration_create_flow_function",
+      "src_calibrate_bocalibration_create_pressure_function",
+      "src_calibrate_bocalibration_determine_misfits_from_signal",
+      "src_calibrate_bocalibration_evaluate_batch",
+      "src_calibrate_bocalibration_fit_segment",
+      "src_calibrate_bocalibration_generate_vcv_dictionary",
+      "src_calibrate_bocalibration_init_worker",
+      "src_calibrate_bocalibration_manage_paths",
+      "src_calibrate_bocalibration_rationale_408",
+      "src_calibrate_bocalibration_read_previous_results",
+      "src_calibrate_bocalibration_retrieve_existing_points",
+      "src_calibrate_bocalibration_run_simulation",
+      "src_calibrate_reporter",
+      "src_calibrate_reporter_compute_misfit",
+      "src_calibrate_reporter_determine_respiratory_mechanics",
+      "src_calibrate_reporter_process_simulation_stiffness",
+      "src_calibrate_reporter_rationale_119",
+      "src_calibrate_reporter_rationale_147",
+      "src_calibrate_reporter_rationale_18",
+      "src_execution_calibrate"
+    ],
+    "9": [
+      "src_airwaymanager",
+      "src_airwaymanager_assign_subdomains_to_cells",
+      "src_airwaymanager_assign_subdomains_to_points",
+      "src_airwaymanager_classify_skel_nodes",
+      "src_airwaymanager_distribute_subdomains",
+      "src_airwaymanager_pedley",
+      "src_airwaymanager_poiseuille",
+      "src_airwaymanager_rationale_2024",
+      "src_airwaymanager_rationale_23",
+      "src_airwaymanager_rationale_451",
+      "src_airwaymanager_rationale_490",
+      "src_airwaymanager_rationale_74",
+      "src_airwaymanager_rationale_80",
+      "src_airwaymanager_rewrite_surface_mesh",
+      "src_airwaymanager_tet_volume",
+      "src_airwaymanager_tetvol",
+      "src_airwaymanager_transform_skel",
+      "src_airwaymanager_trim_airways_with_small_subdomains",
+      "src_analysis_characterizing_airways",
+      "src_awmngr_workbench",
+      "src_awmngr_workbench_determine_bbox"
+    ],
+    "10": [
+      "src_analysis_2025_07_02_evaluate_multiple_simulations",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_compute_iou",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_determine_bbox",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_determine_geometric_center",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_determine_shape_misfit",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_generate_registration_ply",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_generate_simulation_ply",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_generate_uniform_points",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_geometric_center",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_hybrid_voting_raycast",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_interpolatebsplines",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_preprocess_shape_calibration",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_rationale_111",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_rationale_154",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_rationale_26",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_rationale_292",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_rationale_300",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_rationale_314",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_rationale_370",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_rationale_46",
+      "src_analysis_2025_07_02_evaluate_multiple_simulations_tetrahedron_volume"
+    ],
+    "11": [
+      "src_analysis_2026_01_groupwise_image_intensity_analysis",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_analyze_extreme_compartments",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_analyze_isovolumetric_rois",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_analyze_whole_lung",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_apply_median_filter_nifti",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_build_sorted_data_per_subject",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_classify_aeration",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_find_dorsal_ventral_bounds",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_isovolumetricsegmentation",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_pvalue_to_stars",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_py_ndarray",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_rationale_244",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_rationale_260",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_rationale_326",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_rationale_33",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_rationale_408",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_rationale_491",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_rationale_66",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_rationale_85",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_retrieve_regional_fields",
+      "src_analysis_2026_01_groupwise_image_intensity_analysis_retrieve_regional_histogram"
+    ],
+    "12": [
+      "src_analysis_2025_05_12_iou_study",
+      "src_analysis_2025_05_12_iou_study_determine_bbox",
+      "src_analysis_2025_05_12_iou_study_determine_geometric_center",
+      "src_analysis_2025_05_12_iou_study_extract_surface_mesh",
+      "src_analysis_2025_05_12_iou_study_generate_uniform_points",
+      "src_analysis_2025_05_12_iou_study_geometric_center",
+      "src_analysis_2025_05_12_iou_study_interpolatebsplines",
+      "src_analysis_2025_05_12_iou_study_naive_raycast_cloud",
+      "src_analysis_2025_05_12_iou_study_plot_bounding_box",
+      "src_analysis_2025_05_12_iou_study_rationale_129",
+      "src_analysis_2025_05_12_iou_study_rationale_21",
+      "src_analysis_2025_05_12_iou_study_rationale_213",
+      "src_analysis_2025_05_12_iou_study_rationale_232",
+      "src_analysis_2025_05_12_iou_study_rationale_266",
+      "src_analysis_2025_05_12_iou_study_rationale_404",
+      "src_analysis_2025_05_12_iou_study_rationale_41",
+      "src_analysis_2025_05_12_iou_study_rationale_445",
+      "src_analysis_2025_05_12_iou_study_rationale_92",
+      "src_analysis_2025_05_12_iou_study_rewrite_surface_mesh",
+      "src_analysis_2025_05_12_iou_study_tetrahedron_volume"
+    ],
+    "13": [
+      "src_airwaymanager_pipeline",
+      "src_airwaymanager_pipeline_assemble_linear_system",
+      "src_airwaymanager_pipeline_export_solution",
+      "src_airwaymanager_pipeline_init",
+      "src_airwaymanager_pipeline_retrieve_ps",
+      "src_airwaymanager_pipeline_retrieve_qs",
+      "src_airwaymanager_pipeline_solve_linear_system",
+      "src_airwaymanager_pipeline_update_gamma",
+      "src_airwaymanager_pipeline_update_linear_system",
+      "src_airwaymanager_pipeline_update_pedley_resistances",
+      "src_airwaymanager_rationale_1643",
+      "src_airwaymanager_rationale_1651",
+      "src_airwaymanager_rationale_1703",
+      "src_airwaymanager_rationale_1774",
+      "src_airwaymanager_rationale_1814",
+      "src_airwaymanager_rationale_1820",
+      "src_airwaymanager_rationale_1848",
+      "src_airwaymanager_rationale_1885"
+    ],
+    "14": [
+      "src_airwaymanager_rationale_1226",
+      "src_airwaymanager_rationale_1325",
+      "src_airwaymanager_rationale_1451",
+      "src_airwaymanager_rationale_1553",
+      "src_airwaymanager_rationale_1629",
+      "src_airwaymanager_rationale_733",
+      "src_airwaymanager_rationale_864",
+      "src_airwaymanager_rationale_891",
+      "src_airwaymanager_tree",
+      "src_airwaymanager_tree_assemble_linear_system",
+      "src_airwaymanager_tree_assign_synthetic_radii",
+      "src_airwaymanager_tree_export_distal_cloud",
+      "src_airwaymanager_tree_extend_node",
+      "src_airwaymanager_tree_grow_tree",
+      "src_airwaymanager_tree_init",
+      "src_airwaymanager_tree_process_mesh",
+      "src_airwaymanager_tree_set_strahler_order",
+      "src_airwaymanager_tree_solve_linear_system"
+    ],
+    "15": [
+      "src_analysis_2026_01_image_intensity_analysis",
+      "src_analysis_2026_01_image_intensity_analysis_analyze_extreme_compartments",
+      "src_analysis_2026_01_image_intensity_analysis_analyze_isovolumetric_rois",
+      "src_analysis_2026_01_image_intensity_analysis_analyze_whole_lung",
+      "src_analysis_2026_01_image_intensity_analysis_classify_aeration",
+      "src_analysis_2026_01_image_intensity_analysis_find_dorsal_ventral_bounds",
+      "src_analysis_2026_01_image_intensity_analysis_isovolumetricsegmentation",
+      "src_analysis_2026_01_image_intensity_analysis_pvalue_to_stars",
+      "src_analysis_2026_01_image_intensity_analysis_py_ndarray",
+      "src_analysis_2026_01_image_intensity_analysis_rationale_142",
+      "src_analysis_2026_01_image_intensity_analysis_rationale_187",
+      "src_analysis_2026_01_image_intensity_analysis_rationale_203",
+      "src_analysis_2026_01_image_intensity_analysis_rationale_239",
+      "src_analysis_2026_01_image_intensity_analysis_rationale_30",
+      "src_analysis_2026_01_image_intensity_analysis_rationale_63",
+      "src_analysis_2026_01_image_intensity_analysis_rationale_82",
+      "src_analysis_2026_01_image_intensity_analysis_retrieve_regional_histogram"
+    ],
+    "16": [
+      "src_meshing_3_final_meshing_wbc",
+      "src_meshing_3_final_meshing_wbc_assign_stiffness",
+      "src_meshing_3_final_meshing_wbc_assign_subdomains",
+      "src_meshing_3_final_meshing_wbc_compute_normal",
+      "src_meshing_3_final_meshing_wbc_correct_porosity",
+      "src_meshing_3_final_meshing_wbc_count_surface_points_per_cell",
+      "src_meshing_3_final_meshing_wbc_determine_shape_function",
+      "src_meshing_3_final_meshing_wbc_find_surface_points",
+      "src_meshing_3_final_meshing_wbc_initialize_fenics_geometry",
+      "src_meshing_3_final_meshing_wbc_interpolate_intensities",
+      "src_meshing_3_final_meshing_wbc_process_geometry",
+      "src_meshing_3_final_meshing_wbc_rationale_209",
+      "src_meshing_3_final_meshing_wbc_rationale_320",
+      "src_meshing_3_final_meshing_wbc_rationale_438",
+      "src_meshing_3_final_meshing_wbc_terminals_from_skel_mesh",
+      "src_meshing_3_final_meshing_wbc_tetvol"
+    ],
+    "17": [
+      "src_airwaymanager_branch",
+      "src_airwaymanager_branch_assign_branch_dof",
+      "src_airwaymanager_branch_assign_vertex_dof",
+      "src_airwaymanager_branch_close",
+      "src_airwaymanager_branch_extend",
+      "src_airwaymanager_branch_init",
+      "src_airwaymanager_branch_set_children",
+      "src_airwaymanager_branch_set_order",
+      "src_airwaymanager_branch_set_radius",
+      "src_airwaymanager_branch_set_re",
+      "src_airwaymanager_rationale_1358",
+      "src_airwaymanager_rationale_581",
+      "src_airwaymanager_rationale_688",
+      "src_airwaymanager_tree_activate_seed",
+      "src_airwaymanager_tree_trim_generation"
+    ],
+    "18": [
+      "src_calibrate_2025_07_07_lhs_bo_optimization_example",
+      "src_calibrate_bostaticcalibration",
+      "src_calibrate_bostaticcalibration_bayesian_optimization",
+      "src_calibrate_bostaticcalibration_create_flow_function",
+      "src_calibrate_bostaticcalibration_create_pressure_function",
+      "src_calibrate_bostaticcalibration_determine_misfits_from_signal",
+      "src_calibrate_bostaticcalibration_evaluate_batch",
+      "src_calibrate_bostaticcalibration_fit_segment",
+      "src_calibrate_bostaticcalibration_generate_vcv_dictionary",
+      "src_calibrate_bostaticcalibration_init_worker",
+      "src_calibrate_bostaticcalibration_manage_paths",
+      "src_calibrate_bostaticcalibration_rationale_371",
+      "src_calibrate_bostaticcalibration_read_previous_results",
+      "src_calibrate_bostaticcalibration_retrieve_existing_points",
+      "src_calibrate_bostaticcalibration_run_simulation"
+    ],
+    "19": [
+      "src_analysis_2025_05_13_aeration_histograms_from_images",
+      "src_analysis_2025_05_13_aeration_histograms_from_images_analyze_subject",
+      "src_analysis_2025_05_13_aeration_histograms_from_images_compute_histogram",
+      "src_analysis_2025_05_13_aeration_histograms_from_images_compute_volumes",
+      "src_analysis_2025_05_13_aeration_histograms_from_images_determine_aeration_compartments_roiwise",
+      "src_analysis_2025_05_13_aeration_histograms_from_images_histogram_from_voxel_list",
+      "src_analysis_2025_05_13_aeration_histograms_from_images_process_subject_roiwise",
+      "src_analysis_2025_05_13_aeration_histograms_from_images_rationale_128",
+      "src_analysis_2025_05_13_aeration_histograms_from_images_rationale_165",
+      "src_analysis_2025_05_13_aeration_histograms_from_images_rationale_41",
+      "src_analysis_2025_05_13_aeration_histograms_from_images_rationale_63",
+      "src_analysis_2025_05_13_aeration_histograms_from_images_retrieve_segmented_image",
+      "src_analysis_2025_05_13_aeration_histograms_from_images_safety_check",
+      "src_analysis_2025_05_13_aeration_histograms_from_images_scout_segmentation_bounds"
+    ],
+    "20": [
+      "src_supportfunctions",
+      "src_supportfunctions_build_source_term",
+      "src_supportfunctions_define_property",
+      "src_supportfunctions_generate_stiffness_file",
+      "src_supportfunctions_inverse_deformation_analysis",
+      "src_supportfunctions_manage_mesh_directory",
+      "src_supportfunctions_manage_output_directory",
+      "src_supportfunctions_rationale_111",
+      "src_supportfunctions_rationale_139",
+      "src_supportfunctions_rationale_17",
+      "src_supportfunctions_rationale_55",
+      "src_supportfunctions_resume_from_checkpoint",
+      "src_supportfunctions_retrieve_last_checkpoint",
+      "src_supportfunctions_solver_configuration"
+    ],
+    "21": [
+      "src_utilities_figure_reg_resp_mech_panels",
+      "src_utilities_figure_reg_resp_mech_panels_extract_roi_data",
+      "src_utilities_figure_reg_resp_mech_panels_get_farthest_points_from_line",
+      "src_utilities_figure_reg_resp_mech_panels_isovolumetricsegmentation",
+      "src_utilities_figure_reg_resp_mech_panels_pvalue_stars",
+      "src_utilities_figure_reg_resp_mech_panels_rationale_103",
+      "src_utilities_figure_reg_resp_mech_panels_rationale_1422",
+      "src_utilities_figure_reg_resp_mech_panels_rationale_256",
+      "src_utilities_figure_reg_resp_mech_panels_rationale_320",
+      "src_utilities_figure_reg_resp_mech_panels_rationale_75",
+      "src_utilities_figure_reg_resp_mech_panels_retrieve_regional_histogram",
+      "src_utilities_figure_reg_resp_mech_panels_scatter_and_bland_altman",
+      "src_utilities_figure_reg_resp_mech_panels_summarize"
+    ],
+    "22": [
+      "src_analysis_executer",
+      "src_execution_2025_04_21_execute_vcv_pig5",
+      "src_execution_2025_04_21_execute_vcv_pig5_create_flow_function",
+      "src_execution_2025_04_21_execute_vcv_pig5_create_pressure_function",
+      "src_execution_2025_04_21_execute_vcv_pig5_rationale_66",
+      "src_execution_2025_11_10_execute_vcv_pig5_fprev",
+      "src_execution_2025_11_10_execute_vcv_pig5_fprev_create_flow_function",
+      "src_execution_2025_11_10_execute_vcv_pig5_fprev_create_pressure_function",
+      "src_execution_2025_11_10_execute_vcv_pig5_fprev_rationale_66",
+      "src_vcv_lung",
+      "src_vcv_lung_rationale_461",
+      "src_vcv_lung_rationale_725"
+    ],
+    "23": [
+      "src_analysis_2025_05_13_diaphragm_analysis",
+      "src_analysis_2025_05_13_diaphragm_analysis_extract_surface",
+      "src_analysis_2025_05_13_diaphragm_analysis_isolate_diaphragm",
+      "src_analysis_2025_05_13_diaphragm_analysis_rationale_20",
+      "src_analysis_2025_05_13_diaphragm_analysis_rationale_66",
+      "src_functions2",
+      "src_functions2_campo_escalar_in_point",
+      "src_functions2_give_field_through_ydirection",
+      "src_functions2_give_field_through_ydirection_final",
+      "src_functions2_give_zinteres",
+      "src_functions2_point_in_element"
+    ],
+    "24": [
+      "src_analysis_2025_10_06_bland_altman_scatter",
+      "src_analysis_2025_10_06_bland_altman_scatter_get_farthest_points_from_line",
+      "src_analysis_2025_10_06_bland_altman_scatter_isovolumetricsegmentation",
+      "src_analysis_2025_10_06_bland_altman_scatter_pval2txt",
+      "src_analysis_2025_10_06_bland_altman_scatter_rationale_134",
+      "src_analysis_2025_10_06_bland_altman_scatter_rationale_178",
+      "src_analysis_2025_10_06_bland_altman_scatter_rationale_205",
+      "src_analysis_2025_10_06_bland_altman_scatter_retrieve_regional_histogram",
+      "src_analysis_2025_10_06_bland_altman_scatter_scatter_and_bland_altman",
+      "src_analysis_2025_10_06_bland_altman_scatter_scatter_and_bland_altman_global"
+    ],
+    "25": [
+      "src_analysis_2025_10_06_bland_altman_scatter_compare_ma",
+      "src_analysis_2025_10_06_bland_altman_scatter_compare_ma_get_farthest_points_from_line",
+      "src_analysis_2025_10_06_bland_altman_scatter_compare_ma_isovolumetricsegmentation",
+      "src_analysis_2025_10_06_bland_altman_scatter_compare_ma_pval2txt",
+      "src_analysis_2025_10_06_bland_altman_scatter_compare_ma_rationale_135",
+      "src_analysis_2025_10_06_bland_altman_scatter_compare_ma_rationale_179",
+      "src_analysis_2025_10_06_bland_altman_scatter_compare_ma_rationale_206",
+      "src_analysis_2025_10_06_bland_altman_scatter_compare_ma_retrieve_regional_histogram",
+      "src_analysis_2025_10_06_bland_altman_scatter_compare_ma_scatter_and_bland_altman",
+      "src_analysis_2025_10_06_bland_altman_scatter_compare_ma_scatter_and_bland_altman_global"
+    ],
+    "26": [
+      "src_execution_sensibility_execution",
+      "src_execution_sensibility_execution_create_flow_function",
+      "src_execution_sensibility_execution_create_pressure_function",
+      "src_execution_sensibility_execution_evaluate_batch",
+      "src_execution_sensibility_execution_fit_segment",
+      "src_execution_sensibility_execution_generate_vcv_dictionary",
+      "src_execution_sensibility_execution_init_worker",
+      "src_execution_sensibility_execution_rationale_199",
+      "src_execution_sensibility_execution_run_simulation",
+      "src_execution_sensibility_execution_sensibility_execution"
+    ],
+    "27": [
+      "src_analysis_2025_12_03_compare_simulations_reduced",
+      "src_analysis_2025_12_03_compare_simulations_reduced_extract_roi_data",
+      "src_analysis_2025_12_03_compare_simulations_reduced_get_farthest_points_from_line",
+      "src_analysis_2025_12_03_compare_simulations_reduced_isovolumetricsegmentation",
+      "src_analysis_2025_12_03_compare_simulations_reduced_rationale_123",
+      "src_analysis_2025_12_03_compare_simulations_reduced_rationale_469",
+      "src_analysis_2025_12_03_compare_simulations_reduced_rationale_497",
+      "src_analysis_2025_12_03_compare_simulations_reduced_retrieve_regional_histogram",
+      "src_analysis_2025_12_03_compare_simulations_reduced_scatter_and_bland_altman"
+    ],
+    "28": [
+      "src_meshing_2_extrabc_info",
+      "src_meshing_2_extrabc_info_export_cell_ids",
+      "src_meshing_2_extrabc_info_extract_surface",
+      "src_meshing_2_extrabc_info_isolate_diaphragm",
+      "src_meshing_2_extrabc_info_mark_dorsal",
+      "src_meshing_2_extrabc_info_mark_mediastinum",
+      "src_meshing_2_extrabc_info_rationale_18",
+      "src_meshing_2_extrabc_info_rationale_49",
+      "src_meshing_2_extrabc_info_rationale_95"
+    ],
+    "29": [
+      "src_utilities_evaluate_simulations",
+      "src_utilities_evaluate_simulations_extract_roi_data",
+      "src_utilities_evaluate_simulations_get_farthest_points_from_line",
+      "src_utilities_evaluate_simulations_isovolumetricsegmentation",
+      "src_utilities_evaluate_simulations_rationale_123",
+      "src_utilities_evaluate_simulations_rationale_484",
+      "src_utilities_evaluate_simulations_rationale_512",
+      "src_utilities_evaluate_simulations_retrieve_regional_histogram",
+      "src_utilities_evaluate_simulations_scatter_and_bland_altman"
+    ],
+    "30": [
+      "src_utilities_evaluate_simulations_deleteme",
+      "src_utilities_evaluate_simulations_deleteme_extract_roi_data",
+      "src_utilities_evaluate_simulations_deleteme_get_farthest_points_from_line",
+      "src_utilities_evaluate_simulations_deleteme_isovolumetricsegmentation",
+      "src_utilities_evaluate_simulations_deleteme_rationale_123",
+      "src_utilities_evaluate_simulations_deleteme_rationale_490",
+      "src_utilities_evaluate_simulations_deleteme_rationale_518",
+      "src_utilities_evaluate_simulations_deleteme_retrieve_regional_histogram",
+      "src_utilities_evaluate_simulations_deleteme_scatter_and_bland_altman"
+    ],
+    "31": [
+      "src_utilities_evaluate_simulations_deleteme2",
+      "src_utilities_evaluate_simulations_deleteme2_extract_roi_data",
+      "src_utilities_evaluate_simulations_deleteme2_get_farthest_points_from_line",
+      "src_utilities_evaluate_simulations_deleteme2_isovolumetricsegmentation",
+      "src_utilities_evaluate_simulations_deleteme2_rationale_123",
+      "src_utilities_evaluate_simulations_deleteme2_rationale_411",
+      "src_utilities_evaluate_simulations_deleteme2_rationale_439",
+      "src_utilities_evaluate_simulations_deleteme2_retrieve_regional_histogram",
+      "src_utilities_evaluate_simulations_deleteme2_scatter_and_bland_altman"
+    ],
+    "32": [
+      "src_utilities_figure_glob_resp_mech_panel",
+      "src_utilities_figure_glob_resp_mech_panel_extract_roi_data",
+      "src_utilities_figure_glob_resp_mech_panel_get_farthest_points_from_line",
+      "src_utilities_figure_glob_resp_mech_panel_isovolumetricsegmentation",
+      "src_utilities_figure_glob_resp_mech_panel_rationale_123",
+      "src_utilities_figure_glob_resp_mech_panel_rationale_237",
+      "src_utilities_figure_glob_resp_mech_panel_rationale_265",
+      "src_utilities_figure_glob_resp_mech_panel_retrieve_regional_histogram",
+      "src_utilities_figure_glob_resp_mech_panel_scatter_and_bland_altman"
+    ],
+    "33": [
+      "src_airwaymanager_check_coherence_in_clouds",
+      "src_airwaymanager_query_interior_point",
+      "src_airwaymanager_rationale_1115",
+      "src_airwaymanager_rationale_160",
+      "src_airwaymanager_rationale_189",
+      "src_airwaymanager_split_cloud",
+      "src_airwaymanager_tree_generate_sythetic_branches"
+    ],
+    "34": [
+      "src_analysis_generate_histogram",
+      "src_analysis_generate_histogram_rationale_17",
+      "src_analysis_generate_histogram_rationale_206",
+      "src_analysis_generate_histogram_rationale_276",
+      "src_analysis_generate_histogram_retrieve_global_histogram",
+      "src_analysis_generate_histogram_retrieve_regional_histogram",
+      "src_analysis_generate_histogram_tet4defgradsmoothingoptisparse"
+    ],
+    "35": [
+      "src_airwaymanager_corr_to_mesh",
+      "src_airwaymanager_rationale_1022",
+      "src_airwaymanager_rationale_330",
+      "src_airwaymanager_rationale_371",
+      "src_airwaymanager_skel_to_mesh",
+      "src_airwaymanager_tree_radius_from_skeletonization"
+    ],
+    "36": [
+      "src_analysis_2026_01_jacobian_and_dgf",
+      "src_analysis_2026_01_jacobian_and_dgf_build_sorted_data_per_subject",
+      "src_analysis_2026_01_jacobian_and_dgf_isovolumetricsegmentation",
+      "src_analysis_2026_01_jacobian_and_dgf_pvalue_to_stars",
+      "src_analysis_2026_01_jacobian_and_dgf_rationale_45",
+      "src_analysis_2026_01_jacobian_and_dgf_rationale_69"
+    ],
+    "37": [
+      "src_utilities_figure_sensitivity_clinical",
+      "src_utilities_figure_sensitivity_clinical_determine_tau",
+      "src_utilities_figure_sensitivity_clinical_exp_decay",
+      "src_utilities_figure_sensitivity_clinical_plot_row",
+      "src_utilities_figure_sensitivity_clinical_retrieve_fields",
+      "src_utilities_figure_sensitivity_clinical_tau_guttmann"
+    ],
+    "38": [
+      "src_airwayhelper",
+      "src_airwayhelper_assign_subdomains",
+      "src_airwayhelper_rationale_14",
+      "src_airwayhelper_terminals_from_skel_mesh",
+      "src_airwayhelper_tetvol"
+    ],
+    "39": [
+      "src_analysis_2025_10_06_compare_gravity",
+      "src_analysis_2025_10_06_compare_gravity_isovolumetricsegmentation",
+      "src_analysis_2025_10_06_compare_gravity_pval2txt",
+      "src_analysis_2025_10_06_compare_gravity_rationale_135",
+      "src_analysis_2025_10_06_compare_gravity_retrieve_regional_histogram"
+    ],
+    "40": [
+      "src_analysis_2025_11_26_compare_simulations",
+      "src_analysis_2025_11_26_compare_simulations_isovolumetricsegmentation",
+      "src_analysis_2025_11_26_compare_simulations_pval2txt",
+      "src_analysis_2025_11_26_compare_simulations_rationale_123",
+      "src_analysis_2025_11_26_compare_simulations_retrieve_regional_histogram"
+    ],
+    "41": [
+      "src_analysis_2026_03_compare_gvs_from_meshes_and_images",
+      "src_analysis_2026_03_compare_gvs_from_meshes_and_images_compute_mask_volumes_and_gvs",
+      "src_analysis_2026_03_compare_gvs_from_meshes_and_images_compute_volumes_and_gvs",
+      "src_analysis_2026_03_compare_gvs_from_meshes_and_images_rel_diff",
+      "src_analysis_2026_03_compare_gvs_from_meshes_and_images_tetra_volumes"
+    ],
+    "42": [
+      "src_execution_2025_12_universal_executer",
+      "src_execution_2025_12_universal_executer_create_flow_function",
+      "src_execution_2025_12_universal_executer_create_pressure_function",
+      "src_execution_2025_12_universal_executer_fit_segment",
+      "src_execution_2025_12_universal_executer_parse_arguments"
+    ],
+    "43": [
+      "src_execution_2026_02_sensibility_executer",
+      "src_execution_2026_02_sensibility_executer_create_flow_function",
+      "src_execution_2026_02_sensibility_executer_create_pressure_function",
+      "src_execution_2026_02_sensibility_executer_fit_segment",
+      "src_execution_2026_02_sensibility_executer_parse_arguments"
+    ],
+    "44": [
+      "src_utilities_determine_means",
+      "src_utilities_determine_means_determine_tau",
+      "src_utilities_determine_means_exp_decay",
+      "src_utilities_determine_means_tau_guttmanm_raw",
+      "src_utilities_determine_means_tau_guttmann"
+    ],
+    "45": [
+      "src_airwaymanager_determine_equivalent_resistance",
+      "src_airwaymanager_initialize_tree_from_vtu",
+      "src_airwaymanager_rationale_1928",
+      "src_airwaymanager_rationale_2690"
+    ],
+    "46": [
+      "src_airwaymanager_distribute_point_cloud",
+      "src_airwaymanager_naive_raycast_cloud",
+      "src_airwaymanager_rationale_100",
+      "src_airwaymanager_rationale_541"
+    ],
+    "47": [
+      "src_analysis_2025_11_26_visualize_inverse",
+      "src_analysis_2025_11_26_visualize_inverse_isovolumetricsegmentation",
+      "src_analysis_2025_11_26_visualize_inverse_rationale_123",
+      "src_analysis_2025_11_26_visualize_inverse_retrieve_regional_histogram"
+    ],
+    "48": [
+      "src_analysis_2025_12_03_visualize_inverse",
+      "src_analysis_2025_12_03_visualize_inverse_isovolumetricsegmentation",
+      "src_analysis_2025_12_03_visualize_inverse_rationale_123",
+      "src_analysis_2025_12_03_visualize_inverse_retrieve_regional_histogram"
+    ],
+    "49": [
+      "src_execution_2025_04_22_execute_vcv_pig5_mazinger",
+      "src_execution_2025_04_22_execute_vcv_pig5_mazinger_create_flow_function",
+      "src_execution_2025_04_22_execute_vcv_pig5_mazinger_create_pressure_function",
+      "src_execution_2025_04_22_execute_vcv_pig5_mazinger_rationale_66"
+    ],
+    "50": [
+      "src_execution_2025_04_30_execute_vcv_pig5_var1",
+      "src_execution_2025_04_30_execute_vcv_pig5_var1_create_flow_function",
+      "src_execution_2025_04_30_execute_vcv_pig5_var1_create_pressure_function",
+      "src_execution_2025_04_30_execute_vcv_pig5_var1_rationale_66"
+    ],
+    "51": [
+      "src_execution_2025_06_16_execute_vcv_pig5_diaph",
+      "src_execution_2025_06_16_execute_vcv_pig5_diaph_create_flow_function",
+      "src_execution_2025_06_16_execute_vcv_pig5_diaph_create_pressure_function",
+      "src_execution_2025_06_16_execute_vcv_pig5_diaph_rationale_66"
+    ],
+    "52": [
+      "src_execution_2025_07_15_execute_vcv_pig5_diaph_varstiff",
+      "src_execution_2025_07_15_execute_vcv_pig5_diaph_varstiff_create_flow_function",
+      "src_execution_2025_07_15_execute_vcv_pig5_diaph_varstiff_create_pressure_function",
+      "src_execution_2025_07_15_execute_vcv_pig5_diaph_varstiff_rationale_66"
+    ],
+    "53": [
+      "src_execution_2025_08_mazinger_vcv",
+      "src_execution_2025_08_mazinger_vcv_create_flow_function",
+      "src_execution_2025_08_mazinger_vcv_create_pressure_function",
+      "src_execution_2025_08_mazinger_vcv_fit_segment"
+    ],
+    "54": [
+      "src_execution_2025_10_27_execute_vcv_pig5_gravity",
+      "src_execution_2025_10_27_execute_vcv_pig5_gravity_create_flow_function",
+      "src_execution_2025_10_27_execute_vcv_pig5_gravity_create_pressure_function",
+      "src_execution_2025_10_27_execute_vcv_pig5_gravity_rationale_66"
+    ],
+    "55": [
+      "src_execution_2025_11_18_execute_vcv_pig5_mc",
+      "src_execution_2025_11_18_execute_vcv_pig5_mc_create_flow_function",
+      "src_execution_2025_11_18_execute_vcv_pig5_mc_create_pressure_function",
+      "src_execution_2025_11_18_execute_vcv_pig5_mc_rationale_66"
+    ],
+    "56": [
+      "src_execution_2025_11_22_execute_pig5_palv",
+      "src_execution_2025_11_22_execute_pig5_palv_create_flow_function",
+      "src_execution_2025_11_22_execute_pig5_palv_create_pressure_function",
+      "src_execution_2025_11_22_execute_pig5_palv_rationale_67"
+    ],
+    "57": [
+      "src_execution_gravity_execution_analysis",
+      "src_execution_gravity_execution_analysis_isovolumetricsegmentation",
+      "src_execution_gravity_execution_analysis_rationale_56",
+      "src_execution_gravity_execution_analysis_retrieve_regional_histogram"
+    ],
+    "58": [
+      "src_execution_gravity_execution_analysis_birzle",
+      "src_execution_gravity_execution_analysis_birzle_isovolumetricsegmentation",
+      "src_execution_gravity_execution_analysis_birzle_rationale_56",
+      "src_execution_gravity_execution_analysis_birzle_retrieve_regional_histogram"
+    ],
+    "59": [
+      "src_execution_gravity_execution_analysis_birzle_edited",
+      "src_execution_gravity_execution_analysis_birzle_edited_isovolumetricsegmentation",
+      "src_execution_gravity_execution_analysis_birzle_edited_rationale_56",
+      "src_execution_gravity_execution_analysis_birzle_edited_retrieve_regional_histogram"
+    ],
+    "60": [
+      "src_execution_gravity_execution_analysis_exp",
+      "src_execution_gravity_execution_analysis_exp_isovolumetricsegmentation",
+      "src_execution_gravity_execution_analysis_exp_rationale_56",
+      "src_execution_gravity_execution_analysis_exp_retrieve_regional_histogram"
+    ],
+    "61": [
+      "src_execution_gravity_execution_bir_ctis_const_grav",
+      "src_execution_gravity_execution_bir_ctis_const_grav_create_flow_function",
+      "src_execution_gravity_execution_bir_ctis_const_grav_create_pressure_function",
+      "src_execution_gravity_execution_bir_ctis_const_grav_rationale_67"
+    ],
+    "62": [
+      "src_execution_gravity_execution_bir_ctis_const_no_grav",
+      "src_execution_gravity_execution_bir_ctis_const_no_grav_create_flow_function",
+      "src_execution_gravity_execution_bir_ctis_const_no_grav_create_pressure_function",
+      "src_execution_gravity_execution_bir_ctis_const_no_grav_rationale_67"
+    ],
+    "63": [
+      "src_execution_gravity_execution_bir_ctis_var_grav",
+      "src_execution_gravity_execution_bir_ctis_var_grav_create_flow_function",
+      "src_execution_gravity_execution_bir_ctis_var_grav_create_pressure_function",
+      "src_execution_gravity_execution_bir_ctis_var_grav_rationale_68"
+    ],
+    "64": [
+      "src_execution_gravity_execution_bir_ctis_var_no_grav",
+      "src_execution_gravity_execution_bir_ctis_var_no_grav_create_flow_function",
+      "src_execution_gravity_execution_bir_ctis_var_no_grav_create_pressure_function",
+      "src_execution_gravity_execution_bir_ctis_var_no_grav_rationale_67"
+    ],
+    "65": [
+      "src_execution_gravity_execution_exp_ctis_const_grav",
+      "src_execution_gravity_execution_exp_ctis_const_grav_create_flow_function",
+      "src_execution_gravity_execution_exp_ctis_const_grav_create_pressure_function",
+      "src_execution_gravity_execution_exp_ctis_const_grav_rationale_67"
+    ],
+    "66": [
+      "src_execution_gravity_execution_exp_ctis_const_no_grav",
+      "src_execution_gravity_execution_exp_ctis_const_no_grav_create_flow_function",
+      "src_execution_gravity_execution_exp_ctis_const_no_grav_create_pressure_function",
+      "src_execution_gravity_execution_exp_ctis_const_no_grav_rationale_67"
+    ],
+    "67": [
+      "src_execution_gravity_execution_exp_ctis_var_grav",
+      "src_execution_gravity_execution_exp_ctis_var_grav_create_flow_function",
+      "src_execution_gravity_execution_exp_ctis_var_grav_create_pressure_function",
+      "src_execution_gravity_execution_exp_ctis_var_grav_rationale_68"
+    ],
+    "68": [
+      "src_execution_gravity_execution_exp_ctis_var_no_grav",
+      "src_execution_gravity_execution_exp_ctis_var_no_grav_create_flow_function",
+      "src_execution_gravity_execution_exp_ctis_var_no_grav_create_pressure_function",
+      "src_execution_gravity_execution_exp_ctis_var_no_grav_rationale_67"
+    ],
+    "69": [
+      "src_meshing_1_initial_meshing",
+      "src_meshing_1_initial_meshing_determine_cell_volumes",
+      "src_meshing_1_initial_meshing_rationale_16",
+      "src_meshing_1_initial_meshing_tetrahedron_volume_from_array"
+    ],
+    "70": [
+      "src_meshing_evaluate_meshes",
+      "src_meshing_evaluate_meshes_determine_cell_volumes",
+      "src_meshing_evaluate_meshes_rationale_66",
+      "src_meshing_evaluate_meshes_tetrahedron_volume_from_array"
+    ],
+    "71": [
+      "src_utilities_figure_glob_resp_mech_signals",
+      "src_utilities_figure_glob_resp_mech_signals_compute_errors_interpolated",
+      "src_utilities_figure_glob_resp_mech_signals_determine_misfits_from_signal",
+      "src_utilities_figure_glob_resp_mech_signals_rationale_189"
+    ],
+    "72": [
+      "src_utilities_snapshots_processor",
+      "src_utilities_snapshots_processor_crop_and_save_all",
+      "src_utilities_snapshots_processor_preview_crop",
+      "src_utilities_snapshots_processor_rationale_15"
+    ],
+    "73": [
+      "src_utilities_standalone_signal_visualizer",
+      "src_utilities_standalone_signal_visualizer_compute_errors_interpolated",
+      "src_utilities_standalone_signal_visualizer_determine_misfits_from_signal",
+      "src_utilities_standalone_signal_visualizer_rationale_189"
+    ],
+    "74": [
+      "src_utilities_standalone_signal_visualizer_deleteme",
+      "src_utilities_standalone_signal_visualizer_deleteme_compute_errors_interpolated",
+      "src_utilities_standalone_signal_visualizer_deleteme_determine_misfits_from_signal",
+      "src_utilities_standalone_signal_visualizer_deleteme_rationale_189"
+    ],
+    "75": [
+      "src_analysis_2025_10_examine_misfits",
+      "src_analysis_2025_10_examine_misfits_add_signals",
+      "src_analysis_2025_10_examine_misfits_determine_misfits_from_signal"
+    ],
+    "76": [
+      "src_analysis_2025_05_20_calibration_analyzer",
+      "src_analysis_2025_05_20_calibration_analyzer_determine_misfits_from_signal"
+    ],
+    "77": [
+      "src_analysis_2025_05_30_permeability_rule_analysis",
+      "src_analysis_2025_05_30_permeability_rule_analysis_permeability_function"
+    ],
+    "78": [
+      "src_analysis_2025_07_17_examine_simulations",
+      "src_analysis_2025_07_17_examine_simulations_retrieve_existing_points"
+    ],
+    "79": [
+      "src_analysis_2025_08_view_signals",
+      "src_analysis_2025_08_view_signals_add_signals"
+    ],
+    "80": [
+      "src_analysis_2025_08_view_signals2",
+      "src_analysis_2025_08_view_signals2_add_signals"
+    ],
+    "81": [
+      "src_analysis_imageanalysis_volume_study",
+      "src_analysis_imageanalysis_volume_study_global_image_analysis"
+    ],
+    "82": [
+      "src_analysis_respiratorymechanicsexplorer",
+      "src_analysis_respiratorymechanicsexplorer_determine_frequencies"
+    ],
+    "83": [
+      "src_meshing_airways_at_cb2l002_simple_mcfskel_sm_example",
+      "src_meshing_airways_at_cb2l002_simple_mcfskel_sm_example_main"
+    ],
+    "84": [
+      "src_meshing_mat_to_off",
+      "src_meshing_mat_to_off_tri_mat2off"
+    ],
+    "85": [
+      "src_meshing_mesh_a_subject_w_diaphr",
+      "src_meshing_mesh_a_subject_w_diaphr_assign_stiffness"
+    ],
+    "86": [
+      "src_utilities_figure_sensibility",
+      "src_utilities_figure_sensibility_retrieve_fields"
+    ],
+    "87": [
+      "src_utilities_figure_sensibility_2",
+      "src_utilities_figure_sensibility_2_retrieve_fields"
+    ],
+    "88": [
+      "src_analysis_2025_06_02_compare_displacement_fields"
+    ],
+    "89": [
+      "src_analysis_2025_06_06_compare_prescribed_and_effective_fluxes"
+    ],
+    "90": [
+      "src_analysis_2025_06_13_neldermead_visualizer"
+    ],
+    "91": [
+      "src_analysis_2025_08_scattered_parameters"
+    ],
+    "92": [
+      "src_analysis_2025_12_10_visualize_errors"
+    ],
+    "93": [
+      "src_simple_skel_generator"
+    ],
+    "94": [
+      "src_utilities_advanced_vtu_grouper"
+    ],
+    "95": [
+      "src_utilities_table_generator"
+    ],
+    "96": [
+      "src_utilities_vtu_grouper"
+    ]
+  },
+  "cohesion": {
+    "0": 0.07862679955703211,
+    "1": 0.09915966386554621,
+    "2": 0.12561576354679804,
+    "3": 0.1,
+    "4": 0.10666666666666667,
+    "5": 0.10666666666666667,
+    "6": 0.11231884057971014,
+    "7": 0.11067193675889328,
+    "8": 0.15151515151515152,
+    "9": 0.11904761904761904,
+    "10": 0.14761904761904762,
+    "11": 0.12380952380952381,
+    "12": 0.11052631578947368,
+    "13": 0.11764705882352941,
+    "14": 0.11764705882352941,
+    "15": 0.15441176470588236,
+    "16": 0.21666666666666667,
+    "17": 0.13333333333333333,
+    "18": 0.2571428571428571,
+    "19": 0.2087912087912088,
+    "20": 0.14285714285714285,
+    "21": 0.20512820512820512,
+    "22": 0.16666666666666666,
+    "23": 0.2727272727272727,
+    "24": 0.26666666666666666,
+    "25": 0.26666666666666666,
+    "26": 0.4,
+    "27": 0.3333333333333333,
+    "28": 0.2222222222222222,
+    "29": 0.3333333333333333,
+    "30": 0.3333333333333333,
+    "31": 0.2777777777777778,
+    "32": 0.2777777777777778,
+    "33": 0.2857142857142857,
+    "34": 0.2857142857142857,
+    "35": 0.3333333333333333,
+    "36": 0.3333333333333333,
+    "37": 0.4,
+    "38": 0.4,
+    "39": 0.5,
+    "40": 0.5,
+    "41": 0.5,
+    "42": 0.6,
+    "43": 0.6,
+    "44": 0.6,
+    "45": 0.5,
+    "46": 0.5,
+    "47": 0.6666666666666666,
+    "48": 0.6666666666666666,
+    "49": 0.5,
+    "50": 0.5,
+    "51": 0.5,
+    "52": 0.5,
+    "53": 0.8333333333333334,
+    "54": 0.5,
+    "55": 0.5,
+    "56": 0.5,
+    "57": 0.6666666666666666,
+    "58": 0.6666666666666666,
+    "59": 0.6666666666666666,
+    "60": 0.6666666666666666,
+    "61": 0.5,
+    "62": 0.5,
+    "63": 0.5,
+    "64": 0.5,
+    "65": 0.5,
+    "66": 0.5,
+    "67": 0.5,
+    "68": 0.5,
+    "69": 0.6666666666666666,
+    "70": 0.6666666666666666,
+    "71": 0.5,
+    "72": 0.5,
+    "73": 0.5,
+    "74": 0.5,
+    "75": 0.6666666666666666,
+    "76": 1.0,
+    "77": 1.0,
+    "78": 1.0,
+    "79": 1.0,
+    "80": 1.0,
+    "81": 1.0,
+    "82": 1.0,
+    "83": 1.0,
+    "84": 1.0,
+    "85": 1.0,
+    "86": 1.0,
+    "87": 1.0,
+    "88": 1.0,
+    "89": 1.0,
+    "90": 1.0,
+    "91": 1.0,
+    "92": 1.0,
+    "93": 1.0,
+    "94": 1.0,
+    "95": 1.0,
+    "96": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_vcv_lung_execute_vcv_simulation",
+      "label": "execute_vcv_simulation()",
+      "degree": 17
+    },
+    {
+      "id": "src_airwaymanager_branch",
+      "label": "Branch",
+      "degree": 16
+    },
+    {
+      "id": "src_airwaymanager_tree",
+      "label": "Tree",
+      "degree": 15
+    },
+    {
+      "id": "src_airwaymanager_pipeline",
+      "label": "Pipeline",
+      "degree": 11
+    },
+    {
+      "id": "src_calibrate_calibrationlib3d_step",
+      "label": "step()",
+      "degree": 10
+    },
+    {
+      "id": "src_calibrate_calibrationlib3d_iterate",
+      "label": "iterate()",
+      "degree": 9
+    },
+    {
+      "id": "src_calibrate_newcalibrationlib_iterate",
+      "label": "iterate()",
+      "degree": 9
+    },
+    {
+      "id": "src_calibrate_shapecalibration_iterate",
+      "label": "iterate()",
+      "degree": 9
+    },
+    {
+      "id": "src_calibrate_newcalibrationlib_step",
+      "label": "step()",
+      "degree": 8
+    },
+    {
+      "id": "src_meshing_3_final_meshing_wbc_process_geometry",
+      "label": "process_geometry()",
+      "degree": 8
+    }
+  ],
+  "surprises": [
+    {
+      "source": "run_simulation()",
+      "target": "execute_vcv_simulation()",
+      "source_files": [
+        "src/calibrate/BOStaticCalibration.py",
+        "src/vcv_lung.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "execute_parallel_simulations()",
+      "target": "execute_vcv_simulation()",
+      "source_files": [
+        "src/calibrate/calibrationLib3D.py",
+        "src/vcv_lung.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "indirect_call",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "execute_single_simulation()",
+      "target": "execute_vcv_simulation()",
+      "source_files": [
+        "src/calibrate/shapeCalibration.py",
+        "src/vcv_lung.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "run_simulation()",
+      "target": "execute_vcv_simulation()",
+      "source_files": [
+        "src/calibrate/BOCalibration.py",
+        "src/vcv_lung.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "execute_single_simulation()",
+      "target": "execute_vcv_simulation()",
+      "source_files": [
+        "src/calibrate/calibrationLib3D.py",
+        "src/vcv_lung.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
