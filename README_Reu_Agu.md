@@ -1,5 +1,7 @@
 # Reunión con Agustín sobre super-codigo
 
+Este archivo contiene la información que me compartió Agustín sobre la estructura actual del proyecto y en qué debería enfocarme.
+
 ## Estrutura
 
 ### Estructura completa
@@ -106,17 +108,7 @@ En la clase Tree está oro puro, y si quisera implementar lo de Bates con resist
 vcv_lung: Este es el código real. hay 2 fnciones de support
 - execute_vcv_simularion: esta es la grande super bomba función para hacer la simulación completa.
 
-
-
 ## To-do
 
-- Partir también revisando los códigos de Nivaldo
-- Agendar una reu con hurtado para contarle sólo que me reuní con Agustín y quizás corrí una simulación
 - correr el 2025-12_universal-executer.py con -pig_id=2 - mesh_type=medium
-- me mandara 
-
-
-### Tips
-
-- Trabaja con la geometría más penca que te permita sacar resultados rápido
-- Recién para el paper le subes la resolución
+- Partir también revisando los códigos de Nivaldo
