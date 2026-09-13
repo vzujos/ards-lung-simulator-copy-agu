@@ -24,16 +24,12 @@ ards-lung-simulator/
 │   ├── core/           # Simulation engine (vcv_lung, AirwayManager, modelfunctions, BOCalibration)
 │   ├── meshing/        # 3-step meshing pipeline (segmentation -> surface BC tagging -> FEniCS mesh)
 │   ├── postprocessing/ # Results extraction (VTU grouping, biomechanical metrics, validation)
-│   ├── experiment/     # Staging area for exploratory models and analysis under review
-│   ├── legacy/         # Preserved historical solvers (PCV), early calibration, and archives
-│   └── trash/          # [Temporary] Staged obsolete files slated for manual deletion
+│   └── experiment/     # Staging area for exploratory models and analysis under review
 │
 ├── scripts/            # Command-line entrypoints for simulation, calibration, and sensitivity
-├── manuscript/         # Publication figure generators (code/) and high-res vector figures (figures/)
 ├── raw-data/           # Animal experimental monitoring records and ventilator signals (Signals/)
 ├── results-data/       # Output directories for simulation VTU checkpoints and metrics
-├── testing-data/       # Reference segmentations (NIfTI), benchmark meshes, and stable test cases
-└── presentations/      # Conference talks, slide decks, and project presentation assets
+└── testing-data/       # Reference segmentations (NIfTI), benchmark meshes, and stable test cases
 ```
 
 ---
@@ -54,7 +50,7 @@ Launch forward volume-controlled simulations using the universal executer:
 
 ```bash
 # Run simulation for Pig 5 using a medium-coarse tetrahedral mesh
-python scripts/2025-12_universal-executer.py -pig_id 5 -mesh_type medium-coarse
+python scripts/universal-executer.py -pig_id 5 -mesh_type medium-coarse
 ```
 
 ### 3. Running Parameter Calibration
@@ -75,16 +71,7 @@ To be included.
 
 Developed by the Computational Medicine Laboratory at Pontificia Universidad Católica de Chile. Refer to the project publication for citation guidelines.
 
-
-
 ## Cambios al repositorio original (Antes de Pull)
-
-Se descartaron las siguientes carpetas y archivos (por recomendación de Agustín):
-
-- `src/legacy/`
-- `src/signal-processing/`
-- `src/test/`
-- `functions2.py`
 
 Se realizaron los siguientes cambios al archivo `src/execution/2025-12_universal-executer.py`:
 
