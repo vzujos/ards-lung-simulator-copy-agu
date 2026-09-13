@@ -1,3 +1,12 @@
-__pycache__
-/Geometries/
-/graphify-out/cache/
+/src/__pycache__
+*.vtu
+*.pvd
+*.xdmf
+*.h5
+*.npz
+*.png
+*.gz
+*.tiff
+*.pdf
+*.pyc
+/results-data
