@@ -1,0 +1,137 @@
+{
+  "file-series-version": "1.0",
+  "files": [
+    {
+      "name": "full_0.000000000000.vtu",
+      "time": 0.0
+    },
+    {
+      "name": "postfull_0.000500000000.vtu",
+      "time": 0.0005
+    },
+    {
+      "name": "postfull_0.001000000000.vtu",
+      "time": 0.001
+    },
+    {
+      "name": "postfull_0.038400000000.vtu",
+      "time": 0.0384
+    },
+    {
+      "name": "postfull_0.075800000000.vtu",
+      "time": 0.0758
+    },
+    {
+      "name": "postfull_0.113200000000.vtu",
+      "time": 0.1132
+    },
+    {
+      "name": "postfull_0.150600000000.vtu",
+      "time": 0.1506
+    },
+    {
+      "name": "postfull_0.188000000000.vtu",
+      "time": 0.188
+    },
+    {
+      "name": "postfull_0.225400000000.vtu",
+      "time": 0.2254
+    },
+    {
+      "name": "postfull_0.262800000000.vtu",
+      "time": 0.2628
+    },
+    {
+      "name": "postfull_0.300200000000.vtu",
+      "time": 0.3002
+    },
+    {
+      "name": "postfull_0.337600000000.vtu",
+      "time": 0.3376
+    },
+    {
+      "name": "postfull_0.375000000000.vtu",
+      "time": 0.375
+    },
+    {
+      "name": "postfull_0.375500000000.vtu",
+      "time": 0.3755
+    },
+    {
+      "name": "postfull_0.376000000000.vtu",
+      "time": 0.376
+    },
+    {
+      "name": "postfull_0.413400000000.vtu",
+      "time": 0.4134
+    },
+    {
+      "name": "postfull_0.450800000000.vtu",
+      "time": 0.4508
+    },
+    {
+      "name": "postfull_0.488200000000.vtu",
+      "time": 0.4882
+    },
+    {
+      "name": "postfull_0.525600000000.vtu",
+      "time": 0.5256
+    },
+    {
+      "name": "postfull_0.563000000000.vtu",
+      "time": 0.563
+    },
+    {
+      "name": "postfull_0.600400000000.vtu",
+      "time": 0.6004
+    },
+    {
+      "name": "postfull_0.637800000000.vtu",
+      "time": 0.6378
+    },
+    {
+      "name": "postfull_0.675200000000.vtu",
+      "time": 0.6752
+    },
+    {
+      "name": "postfull_0.712600000000.vtu",
+      "time": 0.7126
+    },
+    {
+      "name": "postfull_0.750000000000.vtu",
+      "time": 0.75
+    },
+    {
+      "name": "postfull_0.768750000000.vtu",
+      "time": 0.76875
+    },
+    {
+      "name": "postfull_0.787500000000.vtu",
+      "time": 0.7875
+    },
+    {
+      "name": "postfull_0.806250000000.vtu",
+      "time": 0.80625
+    },
+    {
+      "name": "postfull_0.825000000000.vtu",
+      "time": 0.825
+    },
+    {
+      "name": "postfull_1.118750000000.vtu",
+      "time": 1.11875
+    },
+    {
+      "name": "postfull_1.412500000000.vtu",
+      "time": 1.4125
+    },
+    {
+      "name": "postfull_1.706250000000.vtu",
+      "time": 1.70625
+    },
+    {
+      "name": "postfull_2.000000000000.vtu",
+      "time": 2.0
+    }
+  ]
+}

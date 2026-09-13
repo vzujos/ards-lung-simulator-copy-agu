@@ -1,0 +1,137 @@
+{
+  "file-series-version": "1.0",
+  "files": [
+    {
+      "name": "full_0.000000000000.vtu",
+      "time": 0
+    },
+    {
+      "name": "postfull_0.000500000000.vtu",
+      "time": 1
+    },
+    {
+      "name": "postfull_0.001000000000.vtu",
+      "time": 2
+    },
+    {
+      "name": "postfull_0.038400000000.vtu",
+      "time": 3
+    },
+    {
+      "name": "postfull_0.075800000000.vtu",
+      "time": 4
+    },
+    {
+      "name": "postfull_0.113200000000.vtu",
+      "time": 5
+    },
+    {
+      "name": "postfull_0.150600000000.vtu",
+      "time": 6
+    },
+    {
+      "name": "postfull_0.188000000000.vtu",
+      "time": 7
+    },
+    {
+      "name": "postfull_0.225400000000.vtu",
+      "time": 8
+    },
+    {
+      "name": "postfull_0.262800000000.vtu",
+      "time": 9
+    },
+    {
+      "name": "postfull_0.300200000000.vtu",
+      "time": 10
+    },
+    {
+      "name": "postfull_0.337600000000.vtu",
+      "time": 11
+    },
+    {
+      "name": "postfull_0.375000000000.vtu",
+      "time": 12
+    },
+    {
+      "name": "postfull_0.375500000000.vtu",
+      "time": 13
+    },
+    {
+      "name": "postfull_0.376000000000.vtu",
+      "time": 14
+    },
+    {
+      "name": "postfull_0.413400000000.vtu",
+      "time": 15
+    },
+    {
+      "name": "postfull_0.450800000000.vtu",
+      "time": 16
+    },
+    {
+      "name": "postfull_0.488200000000.vtu",
+      "time": 17
+    },
+    {
+      "name": "postfull_0.525600000000.vtu",
+      "time": 18
+    },
+    {
+      "name": "postfull_0.563000000000.vtu",
+      "time": 19
+    },
+    {
+      "name": "postfull_0.600400000000.vtu",
+      "time": 20
+    },
+    {
+      "name": "postfull_0.637800000000.vtu",
+      "time": 21
+    },
+    {
+      "name": "postfull_0.675200000000.vtu",
+      "time": 22
+    },
+    {
+      "name": "postfull_0.712600000000.vtu",
+      "time": 23
+    },
+    {
+      "name": "postfull_0.750000000000.vtu",
+      "time": 24
+    },
+    {
+      "name": "postfull_0.768750000000.vtu",
+      "time": 25
+    },
+    {
+      "name": "postfull_0.787500000000.vtu",
+      "time": 26
+    },
+    {
+      "name": "postfull_0.806250000000.vtu",
+      "time": 27
+    },
+    {
+      "name": "postfull_0.825000000000.vtu",
+      "time": 28
+    },
+    {
+      "name": "postfull_1.118750000000.vtu",
+      "time": 29
+    },
+    {
+      "name": "postfull_1.412500000000.vtu",
+      "time": 30
+    },
+    {
+      "name": "postfull_1.706250000000.vtu",
+      "time": 31
+    },
+    {
+      "name": "postfull_2.000000000000.vtu",
+      "time": 32
+    }
+  ]
+}
