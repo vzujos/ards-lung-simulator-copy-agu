@@ -8,6 +8,7 @@ import sys
 import os
 from pathlib import Path
 # Add src/core to Python search path
+project_root = Path(__file__).resolve().parent.parent
 core_dir = Path(__file__).resolve().parent.parent / "src" / "core"
 sys.path.append(str(core_dir))
 import vcv_lung
@@ -406,12 +407,12 @@ if __name__ == "__main__":
     
     # Declare the path to the folder
     #path_to_mesh = "/mnt/c/Users/angus/Downloads/CORNELL-NEWGEO/PIG%i/ARDSnet/%s/"%(pig,mesh_type) # ORIGINAL
-    path_to_mesh = "../testing-data/PIG%i/ARDSnet/%s/"%(pig,mesh_type)
+    path_to_mesh = str(project_root / "testing-data" / f"PIG{pig}" / "ARDSnet" / mesh_type) + "/"
     path_to_airway = path_to_mesh+"skel.vtu"
   
     # Direct the output of this execution towards this folder
     # output_to = "/mnt/c/Users/angus/OneDrive - Universidad Católica de Chile/Documentos/ards-lung-simulator/"
-    output_to = "../results-data/"
+    output_to = str(project_root / "results-data") + "/"
     # Make sure this directory exists
     if not os.path.isdir(output_to):
         os.mkdir(output_to)
@@ -509,7 +510,7 @@ if __name__ == "__main__":
 
     # Path to experimental data, load matlab file and prepare data
     #signal_path = '/mnt/c/Users/angus/Downloads/CORNELL-NEWGEO/PIG%i/PIG%i-ARDSnet.npz'%(pig,pig) # ORIGINAL
-    signal_path = '../testing-data/PIG%i/ARDSnet/signals.npz'%(pig)
+    signal_path = project_root / "Geometries" / f"PIG{pig}" / "ARDSnet" / f"PIG{pig}-ARDSnet.npz"
 
     # Load the experimental signal
     npz = np.load(signal_path)

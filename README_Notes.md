@@ -35,3 +35,9 @@ Todo lo que está fuera de src es relevante
 - supportfunctions: de nivaldo. Lo importante es que se define una función que define el solver (es un wrapper)
 - vcv_lung: Este es el código real. hay 2 funciones de support
 - execute_vcv_simularion: esta es la grande super bomba función para hacer la simulación completa.
+
+
+### Codigo corrido 1
+
+- Medium-coarse. T0=20:10. Tf=23:55 DeltaT = 13472s = 3:45 h
+- Se guardan los resultados crudos en results-data/Pigs5-mc-per-1/

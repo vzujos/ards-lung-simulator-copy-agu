@@ -5,35 +5,45 @@ Created on Wed Jun  7 18:58:16 2023
 @author: angus
 """
 
+import argparse
+import json
+import re
+from pathlib import Path
+
 import meshio as io
-import os
 import numpy as np
-import re, json
 
-# In case a global switch needs to be used; Keep updated and consistent
-pig_num = 5
+parser = argparse.ArgumentParser(description="Group simulation VTU fields into time-series files.")
+parser.add_argument("--case", default="PIG5-mc-per", help="Simulation directory below outputs/.")
+parser.add_argument("--mesh-quality", default="medium-coarse", choices=("coarse", "medium-coarse", "medium", "medium-fine", "fine"))
+parser.add_argument("--data-root", type=Path, default=None, help="Directory containing outputs/ and testing-data/.")
+args = parser.parse_args()
 
-# Path to where the 
-root = "C:/Users/angus/OneDrive - Universidad Católica de Chile/Documentos/ards-lung-simulator/"
-case = "PIG%i-m-per/"%pig_num
-mesh_quality = 'medium'
-wdir = root+case
+project_root = Path(__file__).resolve().parents[2]
+data_root = args.data_root.resolve() if args.data_root else project_root
+case_root = data_root / "outputs" / args.case
+mesh_quality = args.mesh_quality
 
 # VTK path
-vtk_path = wdir+"VTK/"
+vtk_path = case_root / "VTK"
 
 # Output for postprocessed paths
-dest = "%s/post/"%(root+case)
-if not os.path.isdir(dest):
-    os.mkdir(dest)
+dest = case_root / "post"
+dest.mkdir(parents=True, exist_ok=True)
 
 # Path to the reference (pre-stressed, end-expiratory) porosity
-initial_porosity_path = "C:/Users/angus/Downloads/CORNELL-NEWGEO/PIG%i/ARDSnet/%s/FEniCS/Porosity_Visualization.vtu"%(pig_num,mesh_quality)
+initial_porosity_path = (data_root / "testing-data" / "PIG5" / "ARDSnet" /
+                         mesh_quality / "FEniCS" / "Porosity_Visualization.vtu")
+
+if not vtk_path.is_dir():
+    raise FileNotFoundError("VTK directory not found: %s" % vtk_path)
+if not initial_porosity_path.is_file():
+    raise FileNotFoundError("Initial porosity file not found: %s" % initial_porosity_path)
 
 # %% Retrieve inverse jacobian for the unloaded geometry
 
 # Associated to the inverse analysis
-j0_mesh = io.read(wdir+'InverseAnalysis/Jacobian000000.vtu')
+j0_mesh = io.read(case_root / 'InverseAnalysis' / 'Jacobian000000.vtu')
 j_inv = j0_mesh.point_data['Jacobian']
 
 # Associated to the deformation previous to the forward simulation
@@ -49,7 +59,8 @@ phi_ee_pointdata = phi_ee_mesh.point_data['Porosity_EE']
 
 # %% Process the data associated to the different timesteps
 
-vtu_files = list(filter(lambda x: x.split(".")[2]=="vtu",os.listdir(vtk_path)))
+vtu_files = [path.name for path in vtk_path.iterdir()
+             if path.is_file() and path.suffix == ".vtu"]
 
 heads = ["Displacement","HYD","Jacobian","Pressure","VM", "QQint"]
 
@@ -79,13 +90,13 @@ for i in range(len(dummy)):
     
     # first field and mesh
     field = heads[0]
-    repath = vtk_path+files[field][i]
+    repath = vtk_path / files[field][i]
     msh = io.read(repath)
     # other fields
     for field in heads[1:]:
         
         # path to secondary mesh
-        repath = vtk_path+files[field][i]
+        repath = vtk_path / files[field][i]
         # load
         msh2 = io.read(repath)
         # extract data
@@ -129,7 +140,7 @@ for i in range(len(dummy)):
     # save
     tag = files["time"][i]
     
-    finalname = "%sfull_%s.vtu"%(dest,tag)
+    finalname = dest / ("full_%s.vtu" % tag)
     msh.write(finalname)
     outlist += [finalname]
     if i%10==0: print("i: %4i  |   t = %s"%(i,tag))
@@ -164,13 +175,13 @@ for field in heads:
         msh.point_data.update({"qq":np.zeros_like(msh.point_data["u"])})
 
     
-    finalname = "%sfull_%s.vtu"%(dest,tag)
+    finalname = dest / ("full_%s.vtu" % tag)
     msh.write(finalname) 
 
 
 # create json for time series
 
-reout = list(map(lambda x: x.split("/")[-1],outlist))
+reout = [path.name for path in outlist]
 
 series_data = {
     "file-series-version": "1.0",
@@ -184,14 +195,14 @@ series_data["files"].append({"name": "full_0.000000000000.vtu", "time": 0})
 for e, out in enumerate(reout):
     series_data["files"].append({"name": out, "time": e+1})
 
-with open(dest + "simulation.vtu.series", "w") as f:
+with open(dest / "simulation.vtu.series", "w") as f:
     json.dump(series_data, f, indent=2)
 
 # --- Post-processing: generate physical-time series file ---
 
 
-original_series = dest + "simulation.vtu.series"
-fixed_series    = dest + "simulation_physical.vtu.series"
+original_series = dest / "simulation.vtu.series"
+fixed_series = dest / "simulation_physical.vtu.series"
 
 # Regex to extract the number from filenames like full_0.019700000000.vtu
 number_re = re.compile(r"full_([0-9\.]+)\.vtu")
