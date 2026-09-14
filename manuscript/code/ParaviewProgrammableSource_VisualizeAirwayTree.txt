@@ -1,0 +1,50 @@
+import numpy as np
+import vtk
+
+data = np.load("D:/airway_tree.npz")
+appender = vtk.vtkAppendPolyData()
+
+start_pnts = data['starts']
+end_pnts = data['ends'] 
+radius = data['radii'] 
+
+for start_pnt, end_pnt, radius in zip(start_pnts, end_pnts, radius):
+    # center coordinates of a cylinder
+    center = (start_pnt + end_pnt)*0.5
+    # direction vector of a cylinder
+    direc = end_pnt - start_pnt 
+    # height of cylinder
+    h = np.linalg.norm(direc)
+    # define the local coordinate system of a cylinder
+    dir2 = direc / h
+    dir1 = np.array([dir2[1], -dir2[0], 0])
+    dir1 /= np.linalg.norm(dir1)
+    dir3 = np.cross(dir1, dir2)
+    # basis transformation matrix of the local coordinate system of a cylinder
+    T = np.array([dir1, dir2, dir3]).T
+    T = np.concatenate([T, np.zeros((3,1))], axis=1)
+    T = np.concatenate([T, np.zeros((1,4))], axis=0)
+    T[3, 3] = 1.0
+    # create a cylinder
+    cyl = vtk.vtkCylinderSource()
+    cyl.SetCenter([0,0,0])
+    cyl.SetRadius(radius)
+    cyl.SetHeight(h)
+    cyl.SetResolution(100)
+    cyl.Update()
+    # transforms cylinder along its local coordinate system
+    transform = vtk.vtkTransform()
+    transform.PostMultiply()
+    transform.SetMatrix(T.flatten())
+    transform.Translate(center)
+    transformFilter = vtk.vtkTransformPolyDataFilter()
+    transformFilter.SetInputData(cyl.GetOutput())
+    transformFilter.SetTransform(transform)
+    transformFilter.Update()
+
+    # add a cylinder to appender
+    appender.AddInputData(transformFilter.GetOutput())
+
+appender.Update()
+
+output.DeepCopy(appender.GetOutput())
