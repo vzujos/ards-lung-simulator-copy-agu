@@ -1,5 +1,4 @@
 /src/__pycache__
-*.vtu
 *.pvd
 *.xdmf
 *.h5
@@ -9,5 +8,4 @@
 *.tiff
 *.pdf
 *.pyc
-/results-data
 /Geometries
