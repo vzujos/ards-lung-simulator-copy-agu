@@ -2,7 +2,6 @@
 *.pvd
 *.xdmf
 *.h5
-*.npz
 *.png
 *.gz
 *.tiff
