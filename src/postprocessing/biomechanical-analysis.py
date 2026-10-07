@@ -9,7 +9,6 @@ Created on Wed May 14 12:56:48 2025
 
 import numpy as np
 from scipy.sparse import coo_matrix
-from numpy.core.umath_tests import matrix_multiply 
 import meshio as io
 import matplotlib.pyplot as plt
 from collections import defaultdict
@@ -241,7 +240,7 @@ def FemAnalysisSPARSE(LM,xyz,phi):
 
 
 	Fnodal_T=np.transpose(Fnodal,(0,2,1))
-	C = matrix_multiply(Fnodal_T,Fnodal)
+	C = Fnodal_T @ Fnodal
 
 	lam2,N = np.linalg.eig(C[:])	
 	for n in np.arange(lam2.shape[0]):
@@ -249,7 +248,7 @@ def FemAnalysisSPARSE(LM,xyz,phi):
 		lam2[n,:] = lam2[n,idx]
 		N[n] = N[n,:,idx].T
 		
-	B = matrix_multiply(Fnodal,Fnodal_T)
+	B = Fnodal @ Fnodal_T
 	
 	aux,nvec = np.linalg.eig(B[:])
 	for n in np.arange(aux.shape[0]):

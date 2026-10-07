@@ -115,9 +115,9 @@ def retrieve_regional_histogram(mesh_path,
 
 
     # Define the directions in use
-    dirs = {"BA" : np.mat([0.,0.,1.]).T, # BA tested; Direction checks out 
-            "VD" : np.mat([0.,1.,0.]).T, # VD tested; Direction checks out
-            "RL" : np.mat([1.,0.,0.]).T}
+    dirs = {"BA" : np.asmatrix([0.,0.,1.]).T, # BA tested; Direction checks out 
+            "VD" : np.asmatrix([0.,1.,0.]).T, # VD tested; Direction checks out
+            "RL" : np.asmatrix([1.,0.,0.]).T}
 
     # Dummy; Node mass should be used. How do I compute it?
     # TODO: Use the actual mass
@@ -327,8 +327,8 @@ cases = ['PIG2-mf-bir','PIG3-mf-bir','PIG4-m-bir','PIG5-mf-mediastinum','PIG6-mf
 subjects = [2,3,4,5,6]
 
 nrois=10
-directions = {'BA':np.mat([0.,0.,1.]).T,
-              'VD':np.mat([0.,1.,0.]).T,}
+directions = {'BA':np.asmatrix([0.,0.,1.]).T,
+              'VD':np.asmatrix([0.,1.,0.]).T,}
 
 direction = 'VD'
 
