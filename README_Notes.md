@@ -41,3 +41,9 @@ Todo lo que está fuera de src es relevante
 
 - Medium-coarse. T0=20:10. Tf=23:55 DeltaT = 13472s = 3:45 h
 - Se guardan los resultados crudos en results-data/Pigs5-mc-per-1/
+- Se guardan los resultados procesados en outputs/Pig5-mc-per/post/
+
+### Cambios
+
+- Se actualizó el código `manuscript/code/generate_pig5_figures.py` para generar las figuras.
+- Se agregó el campo delta_HU_clasif en Paraview que muestra el cambio de clasificación, pero por alguna razón es distinto al obtenido desde Python.
